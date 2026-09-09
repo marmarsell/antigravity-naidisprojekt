@@ -23,6 +23,10 @@ def main() -> None:
     b = float(input("b = "))
     c = float(input("c = "))
 
+    if a == 0:
+        print("A ei tohi olla 0")
+        return
+
     try:
         lahendid = lahenda_ruutvorrand(a, b, c)
     except ValueError as viga:
